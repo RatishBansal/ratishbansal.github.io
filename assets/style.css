@@ -1,0 +1,87 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+body,
+.jumbotron {
+    background-color: #333;
+    color: white;
+}
+
+#current-ed {
+    padding: 24px;
+}
+
+.name {
+    font-size: 5vw;
+}
+
+.desc {
+    font-size: 3vw;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    background-color: #888;
+}
+
+body,
+.jumbotron {
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: rainbow 15s linear infinite;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 15s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: rainbow;
+    animation-duration: 15s linear infinite;
+    -moz-animation: rainbow 15s linear infinite;
+    /* Firefox */
+    -webkit-animation: rainbow 15s linear infinite;
+    /* Safari and Chrome */
+    -o-animation: rainbow 15s linear infinite;
+    /* Opera */
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes rainbow {
+    0%,
+    100% {
+        background-color: red;
+    }
+    33% {
+        background-color: green;
+    }
+    66% {
+        background-color: blue;
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes rainbow {
+    0%,
+    100% {
+        background-color: red;
+    }
+    33% {
+        background-color: green;
+    }
+    66% {
+        background-color: blue;
+    }
+}
