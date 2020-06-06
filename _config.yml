@@ -20,8 +20,7 @@
 
 title: Ratish Bansal @ Blogging
 email: ratish1992@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Blogs on random topics that I would like to share with wider community.
+description: Blogs on random topics that I would like to share with wider community.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: RatishBansal
@@ -53,6 +52,9 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# theme configuration
+
 texture:
         title: Ratish Bansal
         tagline: Backend Developer
@@ -63,3 +65,12 @@ texture:
             github:  RatishBansal
             linkedIn: in/ratish-bansal-14387262 # format: locale/username
         style: black
+        #showNav: true
+        #navigation:
+           # - title: My Work
+            #  url: "/my-work"
+            #- title: Resume
+            #  url: "/resume"
+show_excerpts: true
+#header_pages:
+# - about.md
